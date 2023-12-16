@@ -3,6 +3,7 @@
 // which is indexed with having multiple records of different customers
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 
 // Function to calculate the bill amount based on the units consumed
 float calculate_bill(int units)
@@ -113,5 +114,7 @@ int main()
     write_bill(bill_file, id, units, amount, due, total);
     // Print a confirmation message
     printf("Bill details written to file %s\n", bill_file);
+    printf("press any key to exit\n");
+    getch();
     return 0;
 }
